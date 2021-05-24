@@ -1,0 +1,343 @@
+html{
+    font-size: 16px;
+}
+
+body{
+    font-family: "Quicksand";
+    margin: 0;
+}
+
+.hide {
+    display: none;
+}
+
+.cupcakes {
+    background: url("../img/cupcakes-thin.jpg");
+    height: 30px;
+    background-repeat: repeat-x; 
+    width: 100%;
+    background-size: contain;
+}
+
+.date-fact-container,
+.actor-container,
+.num-fact-container,
+.chuck-container {
+    min-height: 50px;
+    width: 100%;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 100%;   
+}
+
+.main-title {
+    width: 100%;
+    background: url("../img/cupcakes.jpg");
+    background-position: center;
+    background-size: cover;
+    min-height: 300px;
+    border-bottom: 1px solid #9fc5d2
+}
+
+.main-title h1 {
+    font-size: 2em;
+    color: #09a78f;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.intro {
+    background: url("../img/dinos.jpg");
+    background-position: center;
+    background-size: cover;
+    min-height: 234px;
+    color: #09a78f;
+    font-weight: bold;
+    border-bottom: 1px solid #9fc5d2
+}
+
+.intro-one {
+    width: 62%;
+    margin-left: 10px;
+    margin-top: 12px;
+    font-size: .98em;
+}
+
+.intro-two {
+    width: 46%;
+    margin-left: 182px;
+    margin-top: 25px;
+    font-size: .98em;
+    text-align: right;
+}
+
+.extra-space {
+    width: 100%;
+    height: 16px;
+    background: #c7e7f2;
+}
+
+.button-container {
+    background-image: linear-gradient(#ead5e4, #c5e5f0);
+    width: 100%;
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.button {
+    width: 45%;
+    text-align: center;
+}
+
+.date-button,
+.actor-button,
+.num-button,
+.chuck-button {
+    background-color: #fde5e5;
+    border-radius: 5px;
+    border-color: #94ffef;
+    border-width: medium;
+    font-family: "Quicksand";
+    font-weight: bold;
+    color: #09a78f;
+    font-size: 1em;  
+}
+
+.date-fact,
+.num-fact {
+    background-color: #09a78f;
+    padding: 5px;
+    color: #fde5e5;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.date-img {
+    max-height: 100px;
+}
+
+.fa-imdb {
+    color: yellow;
+    font-size: 4.5em;
+    background: black;
+    border-right: 3px solid black;
+    border-left: 4px solid black;
+}
+
+.actor-container {
+    text-align: center;
+    color: #fde5e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.actor-name{
+    width: 100%;
+    margin-right: 15px;
+    margin-left: 15px;
+    border-radius: 10px;
+}
+
+.actor-img{
+    width: 45%;
+}
+
+.actor-name,
+.actor-bio {
+    background: #09a78f;
+}
+
+.actor-bio {
+    text-align: left;
+    width: 80%;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.num-img {
+    max-height: 50px;
+}
+
+.surprise {
+    color: #09a78f;
+    background-color: #ead5e4;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.cake-img {
+    max-height: 190px;
+}
+
+.chuck-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.chuck-img {
+    max-height: 250px;
+    max-width: 100%;
+}
+
+.chuck-item {
+    width: 45%;
+}
+
+.chuck-fact {
+    background-color: #09a78f;
+    padding: 5px;
+    color: #fde5e5;
+    border-radius: 10px;
+}
+
+
+@media only screen and (min-width: 768px) {
+    /* Tablet Styles */
+    .main-title h1 {
+        font-size: 3em;
+    }
+
+    .intro {
+        background-image: url(../img/dinos.jpg);
+        background-position: bottom;
+        background-size: cover;
+        width: 768px;
+        height: 561px;
+        color: #09a78f;
+        font-weight: bold;
+        border-bottom: 1px solid #9fc5d2;
+    }
+
+    .intro-one {
+        width: 60%;
+        margin-left: 51px;
+        margin-top: 23px;
+        font-size: 2.1em;
+    }
+
+    .intro-two {
+            width: 48%;
+            margin-left: 344px;
+            margin-top: 84px;
+            font-size: 2.1em;
+            text-align: right;
+    }
+    
+    .cupcakes {
+        height: 62px;
+    }
+
+    .extra-space {
+        height: 38px;
+    }
+
+    .button-container {
+        padding: 65px 0;
+    }
+
+    .date-button,
+    .actor-button,
+    .num-button,
+    .chuck-button,
+    .surprise,
+    .chuck-fact {
+        font-size: 1.5em;
+    }
+
+    .date-img {
+        max-height: 226px;
+    }
+
+    .date-fact-container {
+        margin-top: 50px;
+    }
+
+    .date-fact,
+    .num-fact,
+    .actor-bio {
+        font-size: 1.5em;
+    }
+
+    .actor-container {
+        margin-top: 50px;
+    }
+
+    .actor-name {
+        margin-right: 200px;
+        margin-left: 200px;
+    }
+
+    .fa-imdb {
+        font-size: 7em;
+        margin-left: 50px;
+    }
+
+    .actor-button {
+        margin-right: 50px;
+    }
+
+    .actor-name {
+        margin-bottom: 30px;
+        font-size: 2em;
+    }
+
+    .num-button {
+        margin-left: 150px;
+        padding: 10px;
+    }
+
+    .num-img {
+        max-height: 110px;
+        margin-right: 150px;
+    }
+
+    .surprise {
+        margin: 40px 126px;
+        padding: 10px 0;
+    }
+
+    .num-fact {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .cake-img {
+        max-height: fit-content;
+    }
+
+    .chuck-button-div {
+        width: 20%;
+    }
+
+    .chuck-button {
+        padding: 10px;
+    }
+
+    .chuck-container {
+        margin-top: 50px;
+    }
+
+    .chuck-img-item {
+        text-align: center;
+    }
+
+    .chuck-img {
+        max-height: 335px;
+    }
+
+
+
+}
