@@ -1,6 +1,5 @@
 const dateFact = document.querySelector(".date-fact");
 const dateButton = document.querySelector(".date-button");
-// const actorContainer = document.querySelector(".actor-container")
 const actorName = document.querySelector(".actor-name")
 const actorImg = document.querySelector(".actor-img")
 const actorButton = document.querySelector(".actor-button")
@@ -11,11 +10,34 @@ const surprise = document.querySelector(".surprise")
 const chuckButton = document.querySelector(".chuck-button")
 const chuckFact = document.querySelector(".chuck-fact")
 const chuckImg = document.querySelector(".chuck-img")
-const secretApiKey = config.secretApiKey
-const numberApiHost = config.numberApiHost
-const actorApiHost = config.actorApiHost
-const chuckApiHost = config.chuckApiHost
+// let secretApiKey = config.secretApiKey
+let secretApiKey = ""
+const submitButton = document.querySelector(".submit")
+// input field for key
+const inputKey = document.querySelector(".key-form input");
+// all of key section
+const keySection = document.querySelector(".key-form")
+const hiddenElements = document.querySelector(".hidden")
+const incorrectMessage = document.querySelector(".incorrect-key")
 
+
+/* Key input */
+submitButton.addEventListener("click", function(){
+    if (inputKey.value === "") {
+        incorrectMessage.innerText = "Without the key, you shall not pass!"
+    } else if (inputKey.value.length !== 50) {
+        clearInput();
+        incorrectMessage.innerText = "Are you just guessing? Are you sure it's your birthday? Please enter the correct birthday key."
+    } else {
+        secretApiKey = inputKey.value;
+        keySection.classList.add("hide")
+        hiddenElements.classList.remove("hidden")
+    }  
+})
+
+function clearInput() {
+    inputKey.value = "";
+  }
 
 /* Date facts */
 
@@ -24,7 +46,7 @@ async function getDateFact(){
         "method": "GET",
         "headers": {
             "x-rapidapi-key": secretApiKey,
-            "x-rapidapi-host": numberApiHost,
+            "x-rapidapi-host": "numbersapi.p.rapidapi.com"
         }
     });
     const dateFactObject = await res.json()
@@ -48,7 +70,7 @@ async function getActorNumber(){
         "method": "GET",
         "headers": {
             "x-rapidapi-key": secretApiKey,
-            "x-rapidapi-host": actorApiHost
+            "x-rapidapi-host": "imdb8.p.rapidapi.com"
         }
     })
     const actorList = await actorRes.json();
@@ -78,7 +100,7 @@ async function getActorInfo (actorNum){
         "method": "GET",
         "headers": {
             "x-rapidapi-key": secretApiKey,
-            "x-rapidapi-host": actorApiHost
+            "x-rapidapi-host": "imdb8.p.rapidapi.com"
         }
     })
     const actorInfo = await actorInfoRes.json();
@@ -105,7 +127,7 @@ async function getNumFact(){
         "method": "GET",
         "headers": {
             "x-rapidapi-key": secretApiKey,
-            "x-rapidapi-host": numberApiHost
+            "x-rapidapi-host": "numbersapi.p.rapidapi.com"
         }
     })
     console.log(numRes)
@@ -133,7 +155,7 @@ async function getChuckFact () {
         "headers": {
             "accept": "application/json",
             "x-rapidapi-key": secretApiKey,
-            "x-rapidapi-host": chuckApiHost
+            "x-rapidapi-host": "matchilling-chuck-norris-jokes-v1.p.rapidapi.com"
         }
     })
     const chuckObject = await chuckRes.json();
@@ -176,7 +198,7 @@ async function getChuckImg () {
         "method": "GET",
         "headers": {
             "x-rapidapi-key": secretApiKey,
-            "x-rapidapi-host": actorApiHost
+            "x-rapidapi-host": "imdb8.p.rapidapi.com"
         }
     })
     const chuckImages = await chuckImgRes.json();

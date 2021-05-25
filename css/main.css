@@ -5,10 +5,38 @@ html{
 body{
     font-family: "Quicksand";
     margin: 0;
+    color: #09a78f
 }
 
-.hide {
-    display: none;
+.key-form{
+    background-image: linear-gradient(#ead5e4, #c5e5f0);
+    height: 812px;
+}
+
+.key-form-item {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.key-form h2 {
+    margin-top: 0px;
+    text-align: center;
+    color: #09a78f;
+    padding-top: 50px;
+    padding-bottom: 15px;
+}
+
+input[type=text] {
+    box-sizing: border-box;
+    width: 50%;
+    color: #2a423a;
+    padding: 1em;
+}
+
+.incorrect-key {
+    font-weight: bold;
+    text-align: center;
 }
 
 .cupcakes {
@@ -38,8 +66,8 @@ body{
 
 .main-title {
     width: 100%;
-    background: url("../img/cupcakes.jpg");
-    background-position: center;
+    background: url("../img/cupcakes-two.jpg");
+    background-position: left;
     background-size: cover;
     min-height: 300px;
     border-bottom: 1px solid #9fc5d2
@@ -49,7 +77,8 @@ body{
     font-size: 2em;
     color: #09a78f;
     text-align: center;
-    margin-top: 40px;
+    margin: 0 45px;
+    padding-top: 40px;
 }
 
 .intro {
@@ -63,17 +92,29 @@ body{
 }
 
 .intro-one {
-    width: 62%;
-    margin-left: 10px;
-    margin-top: 12px;
-    font-size: .98em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.intro-one p {
+    width: 61%;
+    margin-left: 0px;
+    margin-top: 13px;
+    text-align: right;
 }
 
 .intro-two {
-    width: 46%;
-    margin-left: 182px;
-    margin-top: 25px;
-    font-size: .98em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 17px;
+}
+
+.intro-two p {
+    width: 47%;
+    margin-top: 19px;
+    font-size: 1em;
     text-align: right;
 }
 
@@ -98,6 +139,7 @@ body{
     text-align: center;
 }
 
+.submit,
 .date-button,
 .actor-button,
 .num-button,
@@ -203,12 +245,46 @@ body{
     border-radius: 10px;
 }
 
+.hide,
+.hidden {
+    display: none;
+}
+
+/*******************************************************
+MEDIA QUERIES
+*********************************************************/
 
 @media only screen and (min-width: 768px) {
     /* Tablet Styles */
+  
+  /* Key Section */
+
+    .key-form-item {
+        font-size: 1.5em;
+        margin-bottom: 25px;
+    }
+    
+    .key-form h2 {
+        font-size: 2.1em;
+        padding-top: 75px;
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+
+    input[type=text] {
+        width: 51%;
+    }
+
+    .main-title {
+        min-height: 450px;
+    }
+
     .main-title h1 {
         font-size: 3em;
+        padding-top: 70px;
     }
+
+    /*Intro*/
 
     .intro {
         background-image: url(../img/dinos.jpg);
@@ -222,18 +298,25 @@ body{
     }
 
     .intro-one {
-        width: 60%;
-        margin-left: 51px;
+        width: 100%;
+        margin-left: 16px;
         margin-top: 23px;
+    }
+
+    .intro-one p {
+        width: 60%;
         font-size: 2.1em;
     }
 
     .intro-two {
-            width: 48%;
-            margin-left: 344px;
-            margin-top: 84px;
-            font-size: 2.1em;
-            text-align: right;
+            width: 100%;
+            margin-top: 40px;
+    }
+
+    .intro-two p {
+        width: 48%;
+        font-size: 2.1em;
+        margin-right: 30px;
     }
     
     .cupcakes {
@@ -243,6 +326,8 @@ body{
     .extra-space {
         height: 38px;
     }
+
+    /* Button Section */
 
     .button-container {
         padding: 65px 0;
@@ -265,10 +350,19 @@ body{
         margin-top: 50px;
     }
 
+    .date-fact-container,
+    .num-fact-container {
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+    }
+
     .date-fact,
     .num-fact,
     .actor-bio {
         font-size: 1.5em;
+        width: 54%;
+        padding: 15px 27px;
     }
 
     .actor-container {
@@ -327,7 +421,7 @@ body{
     }
 
     .chuck-container {
-        margin-top: 50px;
+        margin: 50px;
     }
 
     .chuck-img-item {
