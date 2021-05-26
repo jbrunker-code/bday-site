@@ -10,7 +10,7 @@ body{
 
 .key-form{
     background-image: linear-gradient(#ead5e4, #c5e5f0);
-    height: 812px;
+    height: 100vh;
 }
 
 .key-form-item {
@@ -57,7 +57,7 @@ input[type=text] {
 
 .main-container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-content: flex-start;
     align-items: center;
     flex-flow: row wrap;
@@ -83,9 +83,12 @@ input[type=text] {
 
 .intro {
     background: url("../img/dinos.jpg");
-    background-position: center;
-    background-size: cover;
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #fcf0fe;
     min-height: 234px;
+    width: 100%;
     color: #09a78f;
     font-weight: bold;
     border-bottom: 1px solid #9fc5d2
@@ -98,22 +101,22 @@ input[type=text] {
 }
 
 .intro-one p {
-    width: 61%;
-    margin-left: 0px;
-    margin-top: 13px;
-    text-align: right;
+    width: 62%;
+    margin-left: 15px;
+    margin-top: 9px;
+    text-align: left;
 }
 
 .intro-two {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-right: 17px;
 }
 
 .intro-two p {
     width: 47%;
     margin-top: 19px;
+    margin-right: 15px;
     font-size: 1em;
     text-align: right;
 }
@@ -129,14 +132,19 @@ input[type=text] {
     width: 100%;
     padding-top: 25px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-flow: row wrap;
 }
 
 .button {
-    width: 45%;
+    width: 44%;
     text-align: center;
+    margin: 12px;
+}
+
+.button-img {
+    margin: 12px;
 }
 
 .submit,
@@ -164,15 +172,11 @@ input[type=text] {
 }
 
 .date-img {
-    max-height: 100px;
+    max-height: 150px;
 }
 
-.fa-imdb {
-    color: yellow;
-    font-size: 4.5em;
-    background: black;
-    border-right: 3px solid black;
-    border-left: 4px solid black;
+.imdb-img {
+    max-height: 50px;
 }
 
 .actor-container {
@@ -184,10 +188,24 @@ input[type=text] {
     flex-flow: row wrap;
 }
 
+.actor {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.actor-title {
+    text-align: center;
+    width: 83%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
 .actor-name{
-    width: 100%;
-    margin-right: 15px;
-    margin-left: 15px;
+    margin: 0;
+    padding: 7px 0;
+    width: 75%;
     border-radius: 10px;
 }
 
@@ -202,13 +220,13 @@ input[type=text] {
 
 .actor-bio {
     text-align: left;
-    width: 80%;
+    width: 75%;
     padding: 5px 10px;
     border-radius: 10px;
 }
 
 .num-img {
-    max-height: 50px;
+    max-height: 70px;
 }
 
 .surprise {
@@ -216,6 +234,8 @@ input[type=text] {
     background-color: #ead5e4;
     border-radius: 10px;
     text-align: center;
+    font-size: 1.1em;
+    margin: 28px;
 }
 
 .cake-img {
@@ -224,18 +244,19 @@ input[type=text] {
 
 .chuck-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    width: 90%;
+}
+
+.chuck-button-div{
+    width: 40%;
 }
 
 .chuck-img {
     max-height: 250px;
     max-width: 100%;
-}
-
-.chuck-item {
-    width: 45%;
 }
 
 .chuck-fact {
@@ -288,9 +309,6 @@ MEDIA QUERIES
 
     .intro {
         background-image: url(../img/dinos.jpg);
-        background-position: bottom;
-        background-size: cover;
-        width: 768px;
         height: 561px;
         color: #09a78f;
         font-weight: bold;
@@ -306,6 +324,7 @@ MEDIA QUERIES
     .intro-one p {
         width: 60%;
         font-size: 2.1em;
+        margin-left: 20px;
     }
 
     .intro-two {
@@ -316,7 +335,8 @@ MEDIA QUERIES
     .intro-two p {
         width: 48%;
         font-size: 2.1em;
-        margin-right: 30px;
+        margin-right: 42px;
+        margin-top: 10px;
     }
     
     .cupcakes {
@@ -331,6 +351,11 @@ MEDIA QUERIES
 
     .button-container {
         padding: 65px 0;
+    }
+
+    .button,
+    .button-img {
+        margin: 25px;
     }
 
     .date-button,
@@ -358,25 +383,29 @@ MEDIA QUERIES
     }
 
     .date-fact,
-    .num-fact,
-    .actor-bio {
+    .num-fact {
         font-size: 1.5em;
         width: 54%;
         padding: 15px 27px;
     }
 
+    .actor-bio {
+        font-size: 1.5em;
+        width: 73%;
+        padding: 15px 27px
+    }
+
+    .imdb-img {
+        max-height: 110px;
+    }
+
     .actor-container {
-        margin-top: 50px;
+        margin-top: 0;
     }
 
     .actor-name {
         margin-right: 200px;
         margin-left: 200px;
-    }
-
-    .fa-imdb {
-        font-size: 7em;
-        margin-left: 50px;
     }
 
     .actor-button {
@@ -431,7 +460,101 @@ MEDIA QUERIES
     .chuck-img {
         max-height: 335px;
     }
+}
 
 
+/*******************************************************
+MEDIA QUERIES
+*********************************************************/
 
+@media only screen and (min-width: 1200px) {
+    /*Desktop Styles */
+
+    .key-form h2 {
+        font-size: 2.8em;
+    }
+
+    .key-form-item {
+        font-size: 2em;
+    }
+
+    input[type=text] {
+        font-size: .8em;
+        width: 62%;
+    }
+
+    .submit {
+        padding: 6px 16px;
+    }
+
+    .main-title {
+        min-height: 500px;
+        background-position: center;
+    }
+
+    .main-title h1 {
+        font-size: 5em;
+    }
+
+    .intro {
+        height: 782px;
+    }
+
+    .intro-one {
+        margin-left: 61px;
+        margin-top: 36px;
+    }
+
+    .intro-one p {
+        font-size: 2.8em;
+        width: 45%;
+        text-align: center;
+    }
+
+    .intro-two p {
+        width: 33%;
+        font-size: 2.8em;
+        margin-top: 61px;
+        margin-right: 111px;
+        text-align: center;
+    }
+
+    .cupcakes {
+        height: 100px;
+    }
+
+/*Button Section */
+
+    .button-container{
+        justify-content: flex-start;
+    }
+
+    .button{
+        width: 36%;
+        font-size: 2em;
+    }
+
+    .date-button {
+        width: 75%;
+        padding: 10px;
+    }
+
+    .button-img {
+        width: 27%;
+        text-align: center;
+    }
+
+    .date-img {
+        max-height: 427px;
+    }
+
+    .date-fact-container{
+        width: 37%;
+    }
+
+    .date-fact {
+        font-size: 2em;
+        margin: 0;
+        width: 67%;
+    }
 }
