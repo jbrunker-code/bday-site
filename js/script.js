@@ -163,7 +163,7 @@ async function getChuckFact () {
     selectRandomChuckFact(chuckArray);
 }
 
-let usedChuckArray = [];
+let usedChuckArray = [2, 7, 10, 19, 23, 26, 33, 34, 35];
 function selectRandomChuckFact(chuckArray){
     let randomIndex = Math.floor(Math.random() * chuckArray.length);
     if (usedChuckArray.includes(randomIndex)){
@@ -171,7 +171,7 @@ function selectRandomChuckFact(chuckArray){
     } else {
         usedChuckArray.push(randomIndex);
         if (usedChuckArray.length === chuckArray.length){
-            usedChuckArray = [];
+            usedChuckArray = [2, 7, 10, 19, 23, 26, 33, 34, 35];
         }
         const randomChuckFact = chuckArray[randomIndex];
         const chuckFactInfo = randomChuckFact.value
