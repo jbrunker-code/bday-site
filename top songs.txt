@@ -1,0 +1,370 @@
+{year: "1960",
+top-song: "Cathy's Clown",
+artist: "The Everyly Brothers
+music-video: "https://www.youtube.com/watch?v=PXvKAWiU_cQ"
+top-film: "Psycho",
+trailer: "https://www.youtube.com/watch?v=Wz719b9QUqY"
+movie-ticket: "$0.51"}
+
+{year: "1961",
+top-song: "Moody River",
+artist: "Pat Boone",
+music-video: "https://www.youtube.com/watch?v=COkOmvr9c3c"
+top-film: "Wild in the Country",
+trailer: "https://www.youtube.com/watch?v=acIMqgSL-lk"
+movie-ticket: "0.69"}
+
+{year: "1962",
+top-song: "I Can't Stop Loving You",
+artist: "Ray Charles",
+top-film: "That Touch of Mink",
+movie-ticket: "$0.70"}
+
+{year: "1963",
+top-song: "Sukiyaki",
+artist: "Kyu Sakamoto",
+top-film: "Cleopatra",
+movie-ticket: "$0.86"}
+
+{year: "1964",
+top-song: "Chapel of Love"
+artist: "The Dixie Cups",
+top-film: "The Unsinkable Molly Brown",
+movie-ticket: "$0.93"}
+
+{year: "1965",
+top-song: "I Can't Help Myself (Sugar Pie Honey Bunch)",
+artist: "Four Tops",
+top-film: "Those Magnificent Men in their Flying Machines",
+movie-ticket: "$1.01"}
+
+{year: "1966",
+top-song: "Paint it Black",
+artist: "The Rolling Stones",
+top-film: "The Russians are Coming, the Russians are Coming",
+movie-ticket: "$1.09"}
+
+{year: "1967",
+top-song: "Groovin'",
+artist: "The Young Rascals",
+top-film: "You Only Live Twice",
+movie-ticket: "$1.22"}
+
+{year: "1968",
+top-song: "This Guy's in Love with You",
+artist: "Hugh Masekela",
+top-film: "Rosemary's Baby",
+movie-ticket: "$1.31"}
+
+{year: "1969",
+top-song: "Get Back",
+artist: "The Beatles with Billy Preston",
+top-film: "True Grit",
+movie-ticket: "$1.42"}
+
+{year: "1970",
+top-song: "The Long and Winding Road / For You Blue",
+artist: "The Beatles",
+top-film: "Two Mules for Sister Sara",
+movie-ticket: "$1.65"}
+
+{year: "1971",
+top-song: "It's Too Late / I Feel the Earth Move",
+artist: "Carole King",
+top-film: "Willard",
+movie-ticket: "$1.65"}
+
+{year: "1972",
+top-song: "The Candy Man",
+artist: "Sammy Davis Jr.",
+top-film: "Shaft's Big Score",
+movie-ticket: "$1.70"}
+
+{year: "1973",
+top-song: "My Love",
+artist: "Paul McCarney & Wings",
+top-film: "Battle for the Planet of the Apes",
+movie-ticket: "$1.77"}
+
+{year: "1974",
+top-song: "Billy Don't Be a Hero",
+artist: "Bo Donaldson and The Heywoods",
+top-film: "Chinatown",
+movie-ticket: "$1.87"}
+
+{year: "1975",
+top-song: "Love Will Keep Us Together",
+artist: "Captain & Tennille",
+top-film: "Jaws",
+movie-ticket: "$2.03"}
+
+{year: "1976",
+top-song: "Silly Love Songs",
+artist: "Wings",
+top-film: "Silent Movie",
+movie-ticket: "$2.13"}
+
+{year: "1977",
+top-song: "Dreams",
+artist: "Fleetwood Mac",
+top-film: "The Deep",
+movie-ticket: "$2.23"}
+
+{year: "1978",
+top-song: "Shadow Dancing",
+artist: "Andy Gibb",
+top-film: "Jaws 2",
+movie-ticket: "$2.34"}
+
+{year: "1979",
+top-song: "Hot Stuff",
+artist: "Donna Summer",
+top-film: "Rocky II",
+movie-ticket: "$2.47"}
+
+{year: "1980",
+top-song: "Funkytown",
+artist: "Lipps Inc.",
+top-film: "The Empire Strikes Back",
+movie-ticket: "$2.69"}
+
+{year: "1981",
+top-song: "Stars on 45",
+artist: "Stars on 45",
+top-film: "Superman II",
+movie-ticket: "$2.78"}
+
+{year: "1982",
+top-song: "Ebony and Ivory",
+artist: "Paul McCartney & Stevie Wonder",
+top-film: "E.T. the Extra-Terrestrial",
+movie-ticket: "$2.94"}
+
+{year: "1983",
+top-song: "Flashdance... What a Feeling",
+artist: "Irene Cara",
+top-film: "Superman III",
+movie-ticket: "$3.15"}
+
+{year: "1984",
+top-song: "The Reflex",
+artist: "Duran Duran",
+top-film: "Ghostbusters",
+movie-ticket: "$3.36"}
+
+{year: "1985",
+top-song: "Heaven",
+artist: "Bryan Adams",
+top-film: "Cocoon",
+movie-ticket: "$3.55"}
+
+{year: "1986",
+top-song: "On My Own",
+artist: "Patti LaBelle & Michael McDonald",
+top-film: "The Karate Kid, Part II",
+movie-ticket: "$3.71"}
+
+{year: "1987",
+top-song: "Head to Toe",
+artist: Lisa Lisa & Cult Jam",
+top-film: "The Witches of Eastwick",
+movie-ticket: "$3.91"}
+
+{year "1988",
+top-song: "Together Forever",
+artist: "Rick Astley",
+top-film: "Red Heat",
+movie-ticket: "$4.11"}
+
+{year: "1989",
+top-song: "I'll Be Loving You (Forever)",
+artist: "New Kids on the Block",
+top-film: "Ghostbusters II",
+movie-ticket: "$3.99"}
+
+{year: "1990",
+top-song: "It Must Have Been Love",
+artist: "Roxette",
+top-film: "Dick Tracy",
+movie-ticket: "$4.22"}
+
+{year: "1991",
+top-song: "Rush Rush",
+artist: "Paula Abdul",
+top-film: "Robin Hood: Prince of Thieves",
+movie-ticket: "$4.21"}
+
+{year: "1992",
+top-song: "I'll Be There",
+artist: "Mariah Carey featuring Trey Lorenz",
+top-film: "Batman Returns",
+movie-ticket: "$4.15"}
+
+{year: "1993",
+top-song: "That's the Way Love Goes",
+artist: "Janet Jackson",
+top-film: "Jurassic Park",
+movie-ticket: "$4.14"}
+
+{year: "1994",
+top-song: "I Swear",
+artist: "All-4-One",
+top-film: "Wolf",
+movie-ticket: "$4.08"}
+
+{year: "1995",
+top-song: "Have You Ever Really Loved a Woman?",
+artist: "Bryan Adams",
+top-film: "Batman Forever",
+movie-ticket: "$4.35"}
+
+{year: "1996",
+top-song: "Tha Crossroads",
+artist: "Bone Thugs-n-Harmony",
+top-film: "Eraser",
+movie-ticket: "$4.42"}
+
+{year: "1997",
+top-song: "I'll Be Missing You",
+artist: "Puff Daddy & Faith Evans featuring 112",
+top-film: "Batman & Robin",
+movie-ticket: "$4.59"}
+
+{year: "1998",
+top-song: "The Boy is Mine",
+artist: "Brandy & Monica",
+top-film: "The X-Files",
+movie-ticket: "$4.69"}
+
+{year: "1999",
+top-song: "If You Had My Love",
+artist: "Jennifer Lopez",
+top-film: "Tarzan",
+movie-ticket: "$5.06"}
+
+{year: "2000",
+top-song: "Try Again",
+artist: "Aaliyah",
+top-film: "Shaft",
+movie-ticket: "$5.39"}
+
+{year: "2001",
+top-song: "Lady Marmalade",
+artist: "Christina Aguilera, Lil' Kim, Mya, & Pink",
+top-film: "Lara Croft: Tomb Raider",
+movie-ticket: "$5.65"}
+
+{year: "2002",
+top-song: "Foolish",
+artist: "Ashanti",
+top-film: "Minority Report",
+movie-ticket: "$5.80"}
+
+{year: "2003",
+top-song: "21 Questions",
+artist: "50 Cent featuring Nate Dogg",
+top-film: "Hulk",
+movie-ticket: "$6.03"}
+
+{year: "2004",
+top-song: "Burn",
+artist: "Usher",
+top-film: "Dodgeball: A True Underdog Story",
+movie-ticket: "$6.21"}
+
+{year: "2005",
+top-song: "We Belong Together",
+artist: "Mariah Carey",
+top-film: "Batman Begins",
+movie-ticket: "$6.41"
+}
+
+{year: "2006",
+top-song: "Hips Don't Lie",
+artist: "Shakira featuring Wyclef Jean",
+top-film: "Click",
+movie-ticket: "$6.55"}
+
+{year: "2007",
+top-song: "Umbrella",
+artist: "Rihanna featuring Jay-Z",
+top-film: "Fantastic Four: Rise of the Silver Surfer",
+movie-ticket: "$6.88"}
+
+{year: "2008",
+top-song: "Lollipop",
+artist: "Lil Wayne featuring Static Major",
+top-film: "Get Smart",
+movie-ticket: "$7.18"}
+
+{year: "2009",
+top-song: "Boom Boom Pow",
+artist: "The Black Eyed Peas",
+top-film: "The Proposal",
+movie-ticket: "$7.50"}
+
+{year: "2010",
+top-song: "California Gurls",
+artist: "Katy Perry featuring Snoop Dogg",
+top-film: "Toy Story 3",
+movie-ticket: "$7.89"}
+
+{year: "2011",
+top-song: "Rolling in the Deep",
+artist: "Adele",
+top-film: "Green Lantern",
+movie-ticket: "$7.93"}
+
+{year: "2012",
+top-song: "Call Me Maybe",
+artist: "Carly Rae Jepsen",
+top-film: "Madagascar 3: Europe's Most Wanted",
+movie-ticket: "$7.96"}
+
+{year: "2013",
+top-song: "Blurred Lines",
+song-artist: "Robin Thicke featuring T.I. & Pharrell",
+top-film: "Monsters University",
+movie-ticket: "$8.13"}
+
+{year: "2014",
+top-song: "Fancy",
+artist: "Iggy Azalea featuring Charli XCX",
+top-film: Think Like a Man Too",
+movie-ticket: "$8.17"}
+
+{year: "2015",
+top-song: "See You Again",
+artist: "Wiz Khalifa featuring Charlie Puth",
+top-film: "Jurassic World",
+movie-ticket: "$8.12"}
+
+{year: "2016",
+top-song: "One Dance",
+artist: "Drake featuring Wizkid & Kyla",
+top-film: "Finding Dory",
+movie-ticket: "$8.61"}
+
+{year: "2017",
+top-song: "Despacito",
+artist: "Luis Fonsi & Daddy Yankee featuring Justin Bieber",
+top-film: "Cars 3",
+movie-ticket: "$8.97"}
+
+{year: "2018",
+top-song: "Nice for What",
+artist: "Drake",
+top-film: "Incredibles 2",
+movie-ticket: "$9.11"}
+
+{year: "2019",
+top-song: "Old Town Road",
+artist: "Lil Nas X featuring Billy Ray Cyrus",
+top-film: "Toy Story 4",
+movie-ticket: "$9.16"}
+
+{year: "2020",
+top-song: "Rockstar",
+artist: "DaBaby featuring Roddy Ricch",
+top-film: "Jurassic Park (re-release)",
+movie-ticket: "$9.37"}

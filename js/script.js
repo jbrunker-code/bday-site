@@ -20,6 +20,8 @@ const keySection = document.querySelector(".key-form")
 const hiddenElements = document.querySelector(".hidden")
 const incorrectMessage = document.querySelector(".incorrect-key")
 
+const musicVideo = document.querySelector("#music-video");
+
 
 /* Key input */
 submitButton.addEventListener("click", function(){
@@ -224,3 +226,7 @@ function selectRandomChuckImg(chuckImgArray){
 function displayChuckImg(randomChuckImg){
     chuckImg.src = randomChuckImg
 }
+
+musicVideoUrl = "https://www.youtube.com/embed/acIMqgSL-lk"
+
+musicVideo.src = musicVideoUrl
