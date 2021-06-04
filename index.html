@@ -33,9 +33,9 @@
             <p class="incorrect-key"></p>
         </div>
     </div>
-    <div class="main-container hidden">
+    <div class="main-container hidden" id="top">
         <div class="main-title">
-            <h1>Happy Birthday Dad!</h1>
+            <h1 class="greeting">Happy Birthday Dad!</h1>
         </div>
         <div class="intro">
             <div class="intro-one">
@@ -214,6 +214,67 @@
             <h2>Happy Birthday!</h2>
             <p>I hope you enjoyed your random birthday facts! Here's to many more!</p>
             <p>Love, Jen</p>
+            <p class="ps">P.S. If you'd like to see the site for someone else's birthday facts, just fill in the boxes below!</p>
+            <div class="name-input">
+                <label for="bday-name">Name:</label>
+                <input type="text" id="bday-name" placeholder="Type a name here..."/>
+            </div>
+            <div class="date-input">
+                <label for="bday-month">Month:</label>
+                <select name="bday-month" id="bday-month">
+                    <option value="1">January</option>
+                    <option value="2">February</option>
+                    <option value="3">March</option>
+                    <option value="4">April</option>
+                    <option value="5">May</option>
+                    <option value="6">June</option>
+                    <option value="7">July</option>
+                    <option value="8">August</option>
+                    <option value="9">September</option>
+                    <option value="10">October</option>
+                    <option value="11">November</option>
+                    <option value="12">December</option>
+                </select> 
+                <label for="bday-date">Date:</label>
+                <select name="bday-date" id="bday-date">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+                
+                <label for="bday-age">Age (if you'd like):</label>
+                <input type="text" id="bday-age" />
+            </div>
+            <button class="change-info"><a href="#top">Show me my new birthday facts!</a></button>
+            <button class="reset"><a href="#top">Take me back to Dad's Bday site!</a></button>
         </div>
 
         <div class="cupcakes">

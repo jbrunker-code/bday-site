@@ -526,7 +526,22 @@ const filmText = document.querySelector(".film-text")
 const trailer = document.querySelector("#trailer");
 const musicVideo = document.querySelector("#music-video");
 
+const changeInfo = document.querySelector(".change-info");
 
+const bdayName = document.querySelector("#bday-name")
+const bdayMonth = document.querySelector("#bday-month")
+const bdayDate = document.querySelector("#bday-date")
+const greeting = document.querySelector(".greeting")
+const bdayAge = document.querySelector("#bday-age")
+const resetButton = document.querySelector(".reset")
+const dateImg = document.querySelector(".date-img")
+const numImg = document.querySelector(".num-img")
+const numOneSection = document.querySelector(".num-one-section")
+
+
+let month = "6";
+let day = "17";
+let age = "61";
 
 /* Key input */
 submitButton.addEventListener("click", function(){
@@ -549,7 +564,7 @@ function clearInput() {
 /* Date facts */
 
 async function getDateFact(){
-    const res = await fetch("https://numbersapi.p.rapidapi.com/6/17/date?json=true", {
+    const res = await fetch(`https://numbersapi.p.rapidapi.com/${month}/${day}/date?json=true`, {
         "method": "GET",
         "headers": {
             "x-rapidapi-key": secretApiKey,
@@ -573,7 +588,7 @@ dateButton.addEventListener("click", function(){
 /* Actor facts */
 
 async function getActorNumber(){
-    const actorRes = await fetch("https://imdb8.p.rapidapi.com/actors/list-born-today?month=6&day=17", {
+    const actorRes = await fetch(`https://imdb8.p.rapidapi.com/actors/list-born-today?month=${month}&day=${day}`, {
         "method": "GET",
         "headers": {
             "x-rapidapi-key": secretApiKey,
@@ -630,7 +645,7 @@ actorButton.addEventListener("click", function(){
 /* 61 Facts */
 
 async function getNumFact(){
-    const numRes = await fetch("https://numbersapi.p.rapidapi.com/61/trivia?json=true&notfound=floor", {
+    const numRes = await fetch(`https://numbersapi.p.rapidapi.com/${age}/trivia?json=true&notfound=floor`, {
         "method": "GET",
         "headers": {
             "x-rapidapi-key": secretApiKey,
@@ -772,4 +787,47 @@ function selectRandomYear (){
 
 randomYearButton.addEventListener("click", function(){
     selectRandomYear();
+})
+
+changeInfo.addEventListener("click", function (){
+    month = bdayMonth.value;
+    day = bdayDate.value;
+    age = bdayAge.value;
+    greeting.innerText = `Happy Birthday ${bdayName.value}!`;
+    bdayMonth.value = "";
+    bdayDate.value = "";
+    bdayAge.value = "";
+    bdayName.value = ""; 
+    dateImg.src = "img/calendar.png";
+    numImg.src = "img/number.png";
+    numButton.innerText = `Facts about ${age}`;
+    numOneSection.classList.add("hide");
+    dateFact.classList.add("hide");
+    actorName.classList.add("hide");
+    actorBio.classList.add("hide");
+    surprise.classList.add("hidden");
+    numFact.classList.add("hide");
+    chuckFact.classList.add("hide");
+    chuckImg.src = "";
+    actorImg.src = "";
+})
+
+resetButton.addEventListener("click", function (){
+    month = "6";
+    day = "17";
+    age = "61";
+    greeting.innerText = "Happy Birthday Dad!";
+    dateImg.src = "img/june.jpg";
+    numImg.src = "img/61.jpg";
+    numButton.innerText = "Facts about 61";
+    numOneSection.classList.remove("hide");
+    dateFact.classList.add("hide");
+    actorName.classList.add("hide");
+    actorBio.classList.add("hide");
+    surprise.classList.remove("hidden");
+    surprise.classList.add("hide");
+    numFact.classList.add("hide");
+    chuckFact.classList.add("hide");
+    chuckImg.src = "";
+    actorImg.src = "";
 })

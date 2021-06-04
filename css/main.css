@@ -899,4 +899,24 @@ DESKTOP
         order: 3;
     }
 
+/* PS Section */
+    .name-input {
+        width: 35%;
+    }
+
+    .date-input {
+        width: 52%;
+    }
+
+    .date-input select {
+        font-size: .75em;
+        font-family: 'Quicksand';
+    }
+
+    #bday-year {
+        width: 21%;
+        font-size: .75em;
+        height: 40px;
+    }
+
 }
