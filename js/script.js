@@ -745,7 +745,7 @@ function selectYear(yearArray){
 function displayYear(currentYear){
     songText.innerText = `The #1 song on your birthday in ${currentYear.year} was ${currentYear.topSong} by ${currentYear.artist}.`;
     musicVideo.src = currentYear.musicVideo;
-    filmText.innerText = `The #1 movie at the box office on your birthday in ${currentYear.year} was ${currentYear.topFilm}.  The cost of a movie ticket that year was ${currentYear.movieTicket}.`
+    filmText.innerText = `The #1 movie at the box office on your birthday in ${currentYear.year} was ${currentYear.topFilm}.  The average cost of a movie ticket that year was ${currentYear.movieTicket}.`
     trailer.src = currentYear.trailer;
 }
 
