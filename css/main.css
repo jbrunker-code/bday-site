@@ -1,11 +1,23 @@
 html{
     font-size: 16px;
+    font-family: "Quicksand";
 }
 
 body{
     font-family: "Quicksand";
     margin: 0;
     color: #09a78f
+}
+
+a {
+    text-decoration: none;
+    font-family: "Quicksand";
+    color: #09a78f;
+}
+
+input,
+select {
+    font-family: "Quicksand"
 }
 
 /* Key Form */
@@ -34,11 +46,13 @@ input[type=text] {
     width: 50%;
     color: #2a423a;
     padding: 1em;
+    font-family: "Quicksand"
 }
 
 .incorrect-key {
     font-weight: bold;
     text-align: center;
+    margin: 10px;
 }
 
 /* Main Site */
@@ -164,7 +178,9 @@ input[type=text] {
 .actor-button,
 .num-button,
 .chuck-button,
-.random-year-button {
+.random-year-button,
+.change-info,
+.reset {
     background-color: #fde5e5;
     border-radius: 5px;
     border-color: #94ffef;
@@ -283,6 +299,7 @@ input[type=text] {
 
 .chuck-button-container {
     align-items: flex-start;
+    padding-bottom: 20px;
 }
 
 .chuck-container {
@@ -312,7 +329,8 @@ input[type=text] {
 
 /* Num One Section */
 
-.num-one-section {
+.num-one-section,
+.no-one {
     background-image: linear-gradient(#ead5e4, #c5e5f0);
     display: flex;
     justify-content: center;
@@ -367,6 +385,7 @@ input[type=text] {
     overflow: hidden;
     width: 100%;
     padding-top: 56.25%;
+    margin-bottom: 25px;
 }
 
 #music-video,
@@ -380,10 +399,80 @@ input[type=text] {
     height: 100%;
 }
 
+/* No One Section */
+.no-one {
+    max-width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.no-one a {
+    color: #fde5e5;
+    background: #09a78f;
+    border-radius: 5px;
+    width: 55px;
+    height: 25px;
+}
+
+.luke-gif {
+    width: 100%;
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
+
 .footer p {
     width: 90%;
     font-weight: bold;
     text-align: center;
+}
+
+.name-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.name-input label {
+    margin-right: 10px;
+}
+
+#bday-name,
+#bday-age {
+    height: 25px;
+}
+
+.date-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow:row wrap;
+}
+
+#bday-month,
+#bday-date {
+    margin-left: 10px;
+}
+
+.date-label {
+    margin-left: 45px;
+}
+
+.age-input {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+#bday-age {
+    width: 15%;
+}
+
+.change-info,
+.reset {
+    width: 51%;
+    margin-bottom: 25px;
 }
 
 .hide,
@@ -410,6 +499,11 @@ MEDIA QUERIES
         padding-top: 75px;
         margin-left: 35px;
         margin-right: 35px;
+    }
+
+    .incorrect-key {
+        font-size: 1.75em;
+        margin: 20px;
     }
 
     input[type=text] {
@@ -644,6 +738,48 @@ MEDIA QUERIES
         font-size: 2em;
     }
 
+    #bday-name,
+    #bday-age {
+        height: 43px;
+        font-size: .75em;
+    }
+
+    #bday-name {
+        width: 49%;
+    }
+
+    #bday-month,
+    #bday-date {
+        font-size: .75em;
+        height: 40px;
+    }
+
+    .date-input {
+        align-items: flex-end;
+        width: 100%;
+    }
+
+    .age-input {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #bday-age {
+        margin-left: 10px;
+        width: 13%;
+    }
+
+    .change-info {
+        margin-top: 25px;
+    }
+
+    .change-info,
+    .reset {
+        margin-bottom: 50px;
+    }
+
+
 }
 
 
@@ -653,6 +789,8 @@ DESKTOP
 
 @media only screen and (min-width: 1200px) {
     /*Desktop Styles */
+
+/*Key Section */
 
     .key-form h2 {
         font-size: 2.8em;
@@ -671,17 +809,20 @@ DESKTOP
         padding: 6px 16px;
     }
 
+    /*Main Site */
+
     .main-title {
-        min-height: 600px;
+        min-height: 373px;
         background-position: center;
+        background-size: contain;
     }
 
     .main-title h1 {
-        font-size: 5em;
+        font-size: 3em;
     }
 
     .intro {
-        height: 600px;
+        height: 500px;
     }
 
     .intro-one {
@@ -691,7 +832,7 @@ DESKTOP
     }
 
     .intro-one p {
-        font-size: 2.5em;
+        font-size: 2em;
         width: 39%;
         text-align: right;
         margin-right: 132px;
@@ -704,14 +845,14 @@ DESKTOP
 
     .intro-two p {
         width: 40%;
-        font-size: 2.5em;
+        font-size: 2em;
         margin-top: 36px;
         margin-right: 67px;
         text-align: right;
     }
 
     .cupcakes {
-        height: 100px;
+        height: 80px;
     }
 
 /*Button Section */
@@ -722,6 +863,7 @@ DESKTOP
         padding: 50px;
     }
 
+    
     .date-button-text,
     .actor-button,
     .num-button,
@@ -757,7 +899,7 @@ DESKTOP
     }
 
     .date-fact {
-        font-size: 2em;
+        font-size: 1.5em;
         margin: 0;
         width: 100%;
     }
@@ -850,7 +992,7 @@ DESKTOP
     }
 
     .cake-img {
-        max-height: 500px;
+        max-height: 400px;
         width: auto;
     }
 
@@ -860,12 +1002,13 @@ DESKTOP
     }
 
     .chuck-img {
-        max-height: 405px;
+        max-height: 385px;
     }
 
     .num-one-section {
-        font-size: 2em;
+        font-size: 1.5em;
         justify-content: space-around;
+        padding-bottom: 50px;
     }
 
     .num-one-section h2 {
@@ -874,11 +1017,23 @@ DESKTOP
 
     .year-input {
         align-items: center;
-        width: 31%;
+        width: 38%;
+    }
+
+    #year {
+        padding: 5px;
     }
 
     .random-year {
-        width: 63%;
+        width: 50%;
+    }
+
+    .random-year-button {
+        padding: 10px;
+    }
+
+    .responsive-iframe {
+        margin-bottom: 0;
     }
 
     .song,
@@ -900,17 +1055,38 @@ DESKTOP
     }
 
 /* PS Section */
+    footer {
+        font-size: 1em;
+    }
+
     .name-input {
         width: 35%;
+        margin-bottom: 0;
+        flex-flow: row wrap;
+        width: 41%;
+        margin-bottom: 0;
+    }
+
+    .name-input label {
+        width: 20%;
     }
 
     .date-input {
-        width: 52%;
+        width: 24%;
+        justify-content: flex-start;
     }
 
-    .date-input select {
-        font-size: .75em;
-        font-family: 'Quicksand';
+    .month-label {
+        margin-bottom: 10px;
+    }
+
+    #bday-month {
+        width: 54%;
+        margin-bottom: 10px;
+    }
+
+    #bday-name {
+        width: 58%;
     }
 
     #bday-year {
@@ -919,4 +1095,34 @@ DESKTOP
         height: 40px;
     }
 
+    #bday-date {
+        margin-left: 32px;
+    }
+
+    .date-label {
+        margin-left: 0px;
+    }
+
+    .age-input {
+        width: 35%;
+        flex-flow: row wrap;
+
+    }
+
+    .age-label {
+        width: 100%;
+    }
+
+    #bday-age {
+        width: 22%;
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    .change-info,
+    .reset {
+        margin: 50px 60px 75px 60px;
+        width: 30%;
+        padding: 10px 5px;
+    }
 }

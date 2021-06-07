@@ -520,6 +520,10 @@ const selectedYear = document.querySelector("#year")
 // import {yearArray} from "year-data-Array.js"
 const randomYearButton = document.querySelector(".random-year-button")
 
+const song = document.querySelector(".song");
+const film = document.querySelector(".film");
+const musicFrame = document.querySelector(".music-frame")
+const trailerFrame = document.querySelector(".trailer-frame")
 const songText = document.querySelector(".song-text")
 const filmText = document.querySelector(".film-text")
 
@@ -527,6 +531,8 @@ const trailer = document.querySelector("#trailer");
 const musicVideo = document.querySelector("#music-video");
 
 const changeInfo = document.querySelector(".change-info");
+
+const title = document.querySelector("title")
 
 const bdayName = document.querySelector("#bday-name")
 const bdayMonth = document.querySelector("#bday-month")
@@ -537,6 +543,7 @@ const resetButton = document.querySelector(".reset")
 const dateImg = document.querySelector(".date-img")
 const numImg = document.querySelector(".num-img")
 const numOneSection = document.querySelector(".num-one-section")
+const noOneSection = document.querySelector(".no-one")
 
 
 let month = "6";
@@ -747,6 +754,8 @@ function displayChuckImg(randomChuckImg){
     chuckImg.src = randomChuckImg
 }
 
+/* Num One Section */
+
 function selectYear(yearArray){
     let year = selectedYear.value;
     for (let i = 0 ; i < yearArray.length; i++){
@@ -758,6 +767,10 @@ function selectYear(yearArray){
 }
 
 function displayYear(currentYear){
+    song.classList.remove("hide");
+    musicFrame.classList.remove("hide");
+    trailerFrame.classList.remove("hide");
+    film.classList.remove("hide");
     songText.innerText = `The #1 song on your birthday in ${currentYear.year} was ${currentYear.topSong} by ${currentYear.artist}.`;
     musicVideo.src = currentYear.musicVideo;
     filmText.innerText = `The #1 movie at the box office on your birthday in ${currentYear.year} was ${currentYear.topFilm}.  The average cost of a movie ticket that year was ${currentYear.movieTicket}.`
@@ -793,15 +806,29 @@ changeInfo.addEventListener("click", function (){
     month = bdayMonth.value;
     day = bdayDate.value;
     age = bdayAge.value;
-    greeting.innerText = `Happy Birthday ${bdayName.value}!`;
-    bdayMonth.value = "";
-    bdayDate.value = "";
-    bdayAge.value = "";
+    if (!age){
+        age = "61"
+    }
+    if (!bdayName.value){
+        greeting.innerText = "Happy Birthday!";
+        title.innerText = "Happy Birthday!";
+    } else {
+        greeting.innerText = `Happy Birthday ${bdayName.value}!`;
+        title.innerText = `Happy Birthday ${bdayName.value}!`;
+    }
+    bdayMonth.value = "6";
+    bdayDate.value = "17";
+    bdayAge.value = "61";
     bdayName.value = ""; 
-    dateImg.src = "img/calendar.png";
-    numImg.src = "img/number.png";
+    if (day !== "17" || month !== "6"){
+        dateImg.src = "img/calendar.png";
+        numOneSection.classList.add("hide");
+        noOneSection.classList.remove("hide");
+    }
+    if (age !== "61"){
+        numImg.src = "img/number.png";
+    }
     numButton.innerText = `Facts about ${age}`;
-    numOneSection.classList.add("hide");
     dateFact.classList.add("hide");
     actorName.classList.add("hide");
     actorBio.classList.add("hide");
@@ -817,6 +844,7 @@ resetButton.addEventListener("click", function (){
     day = "17";
     age = "61";
     greeting.innerText = "Happy Birthday Dad!";
+    title.innerText = "Happy Birthday Dad!";
     dateImg.src = "img/june.jpg";
     numImg.src = "img/61.jpg";
     numButton.innerText = "Facts about 61";
@@ -830,4 +858,5 @@ resetButton.addEventListener("click", function (){
     chuckFact.classList.add("hide");
     chuckImg.src = "";
     actorImg.src = "";
+    noOneSection.classList.add("hide")
 })

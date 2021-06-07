@@ -190,21 +190,28 @@
                 </select>
             </div>
             <div class="random-year">
-                <p>Or click here to select a random year!</p>
-                <button class="random-year-button">Random Year</button>
+                <p>Or click to select a</p>
+                <button class="random-year-button">Random Year!</button>
             </div>
-            <div class="song">
+            <div class="song hide">
                 <h2 class="song-text"></h2>
             </div>
-            <div class="responsive-iframe music-frame">    
+            <div class="responsive-iframe music-frame hide">    
                 <iframe id="music-video" width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <div class="film">
+            <div class="film hide">
                 <h2 class="film-text"></h2>
             </div>
-            <div class="responsive-iframe trailer-frame">
+            <div class="responsive-iframe trailer-frame hide">
                 <iframe id="trailer" width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
+        </div>
+
+        <div class="no-one hide">
+            <h2>What was #1?</h2>
+            <p>Sadly, the #1 info is only available for Dad's birthday.</p>
+            <img class="luke-gif" src="https://media.giphy.com/media/Xjo8pbrphfVuw/giphy.gif" alt="Luke Skywalker gif"/>
+            </p>But don't despair! If you like, you can find that info for your (or any) birthday <a href="https://playback.fm/birthday-movie" target="_blank">here!</a></p>
         </div>
 
         <div class="cupcakes">
@@ -220,14 +227,14 @@
                 <input type="text" id="bday-name" placeholder="Type a name here..."/>
             </div>
             <div class="date-input">
-                <label for="bday-month">Month:</label>
+                <label class="month-label" for="bday-month">Month:</label>
                 <select name="bday-month" id="bday-month">
                     <option value="1">January</option>
                     <option value="2">February</option>
                     <option value="3">March</option>
                     <option value="4">April</option>
                     <option value="5">May</option>
-                    <option value="6">June</option>
+                    <option value="6" selected>June</option>
                     <option value="7">July</option>
                     <option value="8">August</option>
                     <option value="9">September</option>
@@ -235,7 +242,7 @@
                     <option value="11">November</option>
                     <option value="12">December</option>
                 </select> 
-                <label for="bday-date">Date:</label>
+                <label class="date-label" for="bday-date">Date:</label>
                 <select name="bday-date" id="bday-date">
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -253,7 +260,7 @@
                     <option value="14">14</option>
                     <option value="15">15</option>
                     <option value="16">16</option>
-                    <option value="17">17</option>
+                    <option value="17" selected>17</option>
                     <option value="18">18</option>
                     <option value="19">19</option>
                     <option value="20">20</option>
@@ -269,10 +276,12 @@
                     <option value="30">30</option>
                     <option value="31">31</option>
                 </select>
-                
-                <label for="bday-age">Age (if you'd like):</label>
+            </div>
+            <div class="age-input">
+                <label class="age-label" for="bday-age">Age (current or favorite):</label>
                 <input type="text" id="bday-age" />
             </div>
+            
             <button class="change-info"><a href="#top">Show me my new birthday facts!</a></button>
             <button class="reset"><a href="#top">Take me back to Dad's Bday site!</a></button>
         </div>
