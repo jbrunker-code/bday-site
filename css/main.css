@@ -793,7 +793,7 @@ DESKTOP
 /*Key Section */
 
     .key-form h2 {
-        font-size: 2.8em;
+        font-size: 2.5em;
     }
 
     .key-form-item {
@@ -869,7 +869,7 @@ DESKTOP
     .num-button,
     .chuck-button,
     .surprise {
-        font-size: 1em;
+        font-size: .75em;
     }
 
     .date-button,
@@ -879,13 +879,13 @@ DESKTOP
     }
 
     .date-button-text {
-        width: 100%;
+        width: 80%;
         padding: 10px;
-        font-size: 1em;
+        margin-right: -43px;
     }
 
     .button-img {
-        width: 33%;
+        width: 23%;
         text-align: center;
     }
 
@@ -894,7 +894,7 @@ DESKTOP
     }
 
     .date-fact-container{
-        width: 33%;
+        width: 35%;
         margin-top: 0;
     }
 
@@ -906,6 +906,7 @@ DESKTOP
 
     .imdb-button-container {
         align-items: flex-start;
+        padding-right: 160px;
     }
 
     .imdb-container {
@@ -913,43 +914,49 @@ DESKTOP
     }
 
     .imdb-button {
-        width: 53%;
+        width: 49%;
     }
 
     .imdb-button-img {
-        width: 26%;
-        margin-right: 90px;
+        width: 50%;
     }
 
     .imdb-img {
-        max-height: 110px;
+        max-height: 85px;
     }
 
     .actor-button {
-        font-size: 1em;
-        margin-left: 124px;
+        font-size: .75em;
+        width: 49%;
+        padding: 10px;
+        margin-right: 0;
     }
 
     .actor-container {
-        width: 40%;
+        width: 49%;
     }
 
     .actor-title {
         margin: 0;
+        width: 62%;
     }
 
     .actor-name {
         margin: 0 0 22px;
+        font-size: 1.5em;
     }
 
     .actor-img {
         max-height: 400px;
+        max-width: 85%;
     }
 
     .actor-bio {
         margin: 0;
-        width: 53%;
+        width: 45%;
+        font-size: 1.125em;
     }
+
 
     .num-container {
         justify-content: space-around;
@@ -1001,9 +1008,19 @@ DESKTOP
         width: 100%;
     }
 
+    .chuck-button {
+        width: 75%;
+    }
+
     .chuck-img {
         max-height: 385px;
     }
+
+    .chuck-fact {
+        padding: 8px 14px;
+    }
+ 
+    /* Num One Section */
 
     .num-one-section {
         font-size: 1.5em;
@@ -1017,7 +1034,9 @@ DESKTOP
 
     .year-input {
         align-items: center;
-        width: 38%;
+        width: 50%;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     #year {
@@ -1054,9 +1073,49 @@ DESKTOP
         order: 3;
     }
 
+/* No One Section */
+
+    .no-one h2 {
+        font-size: 2.25em;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .no-one p {
+        font-size: 1.5em;
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .luke-gif {
+        margin-bottom: 17px;
+        width: 38%;
+        margin-top: 10px;
+    }
+
+    .no-one a {
+        padding: 0px 8px 2px;
+    }
+
+    .no-one a:hover {
+        color: #09a78f;
+        background: #fde5e5;
+        border: 2px solid;
+    }
+
 /* PS Section */
-    footer {
+
+    .footer h2 {
         font-size: 1em;
+    }
+
+    .footer p {
+        margin-top: 0;
+        font-size: .75em;
+    }
+
+    .footer label {
+        font-size: .75em;
     }
 
     .name-input {
@@ -1083,6 +1142,8 @@ DESKTOP
     #bday-month {
         width: 54%;
         margin-bottom: 10px;
+        margin-right: 18px;
+        margin-left: 15px;
     }
 
     #bday-name {
@@ -1104,7 +1165,7 @@ DESKTOP
     }
 
     .age-input {
-        width: 35%;
+        width: 28%;
         flex-flow: row wrap;
 
     }
@@ -1124,5 +1185,6 @@ DESKTOP
         margin: 50px 60px 75px 60px;
         width: 30%;
         padding: 10px 5px;
+        font-size: .875em;
     }
 }
