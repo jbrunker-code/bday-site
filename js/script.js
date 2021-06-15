@@ -816,6 +816,7 @@ changeInfo.addEventListener("click", function (){
         greeting.innerText = `Happy Birthday ${bdayName.value}!`;
         title.innerText = `Happy Birthday ${bdayName.value}!`;
     }
+    location.href="#top";
     bdayMonth.value = "6";
     bdayDate.value = "17";
     bdayAge.value = "61";
@@ -845,6 +846,7 @@ resetButton.addEventListener("click", function (){
     age = "61";
     greeting.innerText = "Happy Birthday Dad!";
     title.innerText = "Happy Birthday Dad!";
+    location.href="#top"
     dateImg.src = "img/june.jpg";
     numImg.src = "img/61.jpg";
     numButton.innerText = "Facts about 61";
