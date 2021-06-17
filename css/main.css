@@ -15,6 +15,8 @@ a {
     color: #09a78f;
 }
 
+
+
 input,
 select {
     font-family: "Quicksand"
@@ -473,6 +475,11 @@ input[type=text] {
 .reset {
     width: 51%;
     margin-bottom: 25px;
+}
+
+button:hover {
+    background: #09a78f;
+    color: #fde5e5;
 }
 
 .hide,
